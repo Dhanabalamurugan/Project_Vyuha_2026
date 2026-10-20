@@ -1,0 +1,19 @@
+Huh the cto gave me this function to put. I'll name it later.
+
+Okay, so I thought the CTO loved the interactive text loop. But this morning he sent me a direct message that literally says:
+
+"Abhinav, I just realized our automated deployment pipeline relies on passing terminal arguments 
+for the automated integration tests. 
+The text prompt completely broke the test runner. 
+Please revert the core engine back to the CLI arguments style, but don't delete your interactive loop code 
+because we might want it for a standalone desktop client later. Work on this on a separate branch."
+
+I panicked. He wants me to go back to the code from Day 1, but keep the Day 2 code, and put the new stuff in a branch.
+Instead of doing something clean like a git revert or just modularizing the code, I decided to use Git like a time machine. 
+I used git checkout to travel back to Commit Day 1.
+
+Once I got there, I created a new branch called feature/back-to-cli. 
+But here’s the thing: since I was technically sitting on an old commit when I branched, 
+my new branch doesn't have the text interface code at all. It's completely gone from this timeline.
+
+To fulfill the "add scientific features" part of his notes, I'm going to add an exponent (power) option here, using the old sys.argv architecture.

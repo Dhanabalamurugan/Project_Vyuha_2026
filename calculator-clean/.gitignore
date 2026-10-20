@@ -1,0 +1,8 @@
+# local environments and Python caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# scratch output from older versions of the GUI
+output.txt

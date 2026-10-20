@@ -1,0 +1,3 @@
+.venv-sim/
+__pycache__/
+*.pyc
